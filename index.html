@@ -11,14 +11,111 @@
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
 
-    <title>View Holiday Deals</title><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+
+
+
+
+<style>
+								<!-- search bar css code for search bar -->
+											<style>
+
+											#searchbar{ 
+												 margin: 4px; 
+												 padding:10px; 
+												 border-radius: 10px; 
+											   } 
+											 
+											   input[type=text] { 
+												  width: 39%; 
+												  -webkit-transition: width 0.15s ease-in-out; 
+												  transition: width 0.15s ease-in-out; 
+												 margin: 10px; 
+												 padding:10px;
+											   } 
+											 
+											   /* When the input field gets focus, 
+													change its width to 50% */
+											   input[type=text]:focus { 
+												 width: 39%; 
+											   } 
+											   .animals { 
+												 margin-left: 0%; 
+												display: inline;
+											   } 
+
+											</style>
+								<!-- search bar css code for search bar -->
+</style>
+
+
+
+
+
+
+
 
 </head>
 <body>
 
-<span>
-<font color="white">Arabicps4games</font>
-</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1><marquee behavior="scroll" bgcolor="black" loop="-1" width="100%">
+<font color="grey">Arabicps4games مرحبا بكم في النسخة التجريبية الجديدة لموقع</font>
+</marquee></h1>
+
+											<!-- Search bar -->
+
+												<input id="searchbar" onkeyup="search_animal()" type="text"
+												name="search" placeholder="🔍Search Games... ابحث عن اسم اللعبة او سنة صدورها او نوعها المرجو الانتظار حتى يتم تحميل الصفحة بالكامل قبل البحث🔍"> 
+
+											<!-- Search bar -->
+
+												<!-- search bar JavaScript code for search bar -->					
+	
+															<script>function search_animal() { 
+																let input = document.getElementById('searchbar').value 
+																input=input.toLowerCase(); 
+																let x = document.getElementsByClassName('animals'); 
+																  
+																for (i = 0; i < x.length; i++) {  
+																	if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+																		x[i].style.display="none"; 
+																	} 
+																	else { 
+																		x[i].style.display="list-item";                  
+																	} 
+																} 
+															} </script> 
+												<!-- search bar JavaScript code for search bar -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- partial:index.partial.html -->
 <body>
@@ -40,7 +137,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -81,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -90,7 +187,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -131,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -140,7 +237,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -181,7 +278,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -190,7 +287,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -231,7 +328,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -240,7 +337,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -281,7 +378,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -290,7 +387,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -331,7 +428,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -340,7 +437,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -381,7 +478,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -390,7 +487,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -431,16 +528,17 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
 
+<br>
 
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -481,7 +579,357 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
+            <!-- Card: City -->
+
+
+
+
+
+
+            <!-- Card: City -->
+            <div class="animals"><section class="card-section">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card__container">
+                            <div class="card-front">
+                                <div class="card-front__tp card-front__tp--city">
+                                <h2 class="card-front__heading">
+                                <img src="https://1.bp.blogspot.com/-A9Wr0qceibg/YtQiYGnXJAI/AAAAAAAAKJk/PWFowbNh-vci4pokP_c2ozqBiOy4up2AwCNcBGAsYHQ/s0/1.jpg" alt="Horizon Forbidden West" style="width:150px;height:140px;">
+                            </h2>
+                            <p class="card-front__text-price">
+                                Download
+                            </p>
+                                </div>
+
+                                <div class="card-front__bt">
+                                    <p class="card-front__text-view card-front__text-view--city">
+                                        <font color="white">Horizon 2 </font> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://i.ytimg.com/an_webp/igl_5sssWjQ/mqdefault_6s.webp?du=3000&sqp=COypxpsG&rs=AOn4CLBhYECbCmYGQR0SCYjKT8AhR2scfA" style="width:150px;height:140px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-page">
+                        <div class="inside-page__container">
+                            <h3 class="inside-page__heading inside-page__heading--city">
+                                RELEASE: 2022
+                            </h3>
+                            <p class="inside-page__text">
+                               ⭐⭐⭐⭐⭐
+			       <br>
+			       Game + Update: 85.82 GB
+			       <br>
+                               GENRE: Action
+                            </p>
+                            <a href="https://ckk.ai/horizon2ps4" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </section></div>
+            <!-- Card: City -->
+
+
+
+
+
+
+            <!-- Card: City -->
+            <div class="animals"><section class="card-section">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card__container">
+                            <div class="card-front">
+                                <div class="card-front__tp card-front__tp--city">
+                                <h2 class="card-front__heading">
+                                <img src="https://1.bp.blogspot.com/-MQGEvxmz0oI/Yq8Ih0q9wnI/AAAAAAAAJ7Q/gJ4RfnoLFvg3yEcZqr3MAzqGrMXZciu5ACNcBGAsYHQ/s0/6.jpg" alt="I Saw Black Clouds" style="width:150px;height:140px;">
+                            </h2>
+                            <p class="card-front__text-price">
+                                Download
+                            </p>
+                                </div>
+
+                                <div class="card-front__bt">
+                                    <p class="card-front__text-view card-front__text-view--city">
+                                        <font color="white">I Saw Black Clouds </font> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://i.ytimg.com/an_webp/-bIZh8b5Jwc/mqdefault_6s.webp?du=3000&sqp=CPW3xpsG&rs=AOn4CLDwO43TpU0oVyiZR1A-CArDDjhWjg" style="width:150px;height:140px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-page">
+                        <div class="inside-page__container">
+                            <h3 class="inside-page__heading inside-page__heading--city">
+                                RELEASE: 2021
+                            </h3>
+                            <p class="inside-page__text">
+                               ⭐⭐⭐
+			       <br>
+			       Game + Update: 15.33 GB
+			       <br>
+                               GENRE: Adventure
+                            </p>
+                            <a href="https://ckk.ai/ISawBlackClouds" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </section></div>
+            <!-- Card: City -->
+
+
+
+
+
+
+            <!-- Card: City -->
+            <div class="animals"><section class="card-section">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card__container">
+                            <div class="card-front">
+                                <div class="card-front__tp card-front__tp--city">
+                                <h2 class="card-front__heading">
+                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
+                            </h2>
+                            <p class="card-front__text-price">
+                                Download
+                            </p>
+                                </div>
+
+                                <div class="card-front__bt">
+                                    <p class="card-front__text-view card-front__text-view--city">
+                                        <font color="white">God of War Ragnarök </font> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-page">
+                        <div class="inside-page__container">
+                            <h3 class="inside-page__heading inside-page__heading--city">
+                                RELEASE: 2022
+                            </h3>
+                            <p class="inside-page__text">
+                               ⭐⭐⭐⭐⭐
+			       <br>
+			       Game + Update: 80.00 GB
+			       <br>
+                               GENRE: Action
+                            </p>
+                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </section></div>
+            <!-- Card: City -->
+
+
+
+
+
+
+            <!-- Card: City -->
+            <div class="animals"><section class="card-section">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card__container">
+                            <div class="card-front">
+                                <div class="card-front__tp card-front__tp--city">
+                                <h2 class="card-front__heading">
+                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
+                            </h2>
+                            <p class="card-front__text-price">
+                                Download
+                            </p>
+                                </div>
+
+                                <div class="card-front__bt">
+                                    <p class="card-front__text-view card-front__text-view--city">
+                                        <font color="white">God of War Ragnarök </font> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-page">
+                        <div class="inside-page__container">
+                            <h3 class="inside-page__heading inside-page__heading--city">
+                                RELEASE: 2022
+                            </h3>
+                            <p class="inside-page__text">
+                               ⭐⭐⭐⭐⭐
+			       <br>
+			       Game + Update: 80.00 GB
+			       <br>
+                               GENRE: Action
+                            </p>
+                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </section></div>
+            <!-- Card: City -->
+
+
+
+
+
+
+            <!-- Card: City -->
+            <div class="animals"><section class="card-section">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card__container">
+                            <div class="card-front">
+                                <div class="card-front__tp card-front__tp--city">
+                                <h2 class="card-front__heading">
+                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
+                            </h2>
+                            <p class="card-front__text-price">
+                                Download
+                            </p>
+                                </div>
+
+                                <div class="card-front__bt">
+                                    <p class="card-front__text-view card-front__text-view--city">
+                                        <font color="white">God of War Ragnarök </font> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-page">
+                        <div class="inside-page__container">
+                            <h3 class="inside-page__heading inside-page__heading--city">
+                                RELEASE: 2022
+                            </h3>
+                            <p class="inside-page__text">
+                               ⭐⭐⭐⭐⭐
+			       <br>
+			       Game + Update: 80.00 GB
+			       <br>
+                               GENRE: Action
+                            </p>
+                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </section></div>
+            <!-- Card: City -->
+
+
+
+
+
+
+            <!-- Card: City -->
+            <div class="animals"><section class="card-section">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card__container">
+                            <div class="card-front">
+                                <div class="card-front__tp card-front__tp--city">
+                                <h2 class="card-front__heading">
+                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
+                            </h2>
+                            <p class="card-front__text-price">
+                                Download
+                            </p>
+                                </div>
+
+                                <div class="card-front__bt">
+                                    <p class="card-front__text-view card-front__text-view--city">
+                                        <font color="white">God of War Ragnarök </font> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-page">
+                        <div class="inside-page__container">
+                            <h3 class="inside-page__heading inside-page__heading--city">
+                                RELEASE: 2022
+                            </h3>
+                            <p class="inside-page__text">
+                               ⭐⭐⭐⭐⭐
+			       <br>
+			       Game + Update: 80.00 GB
+			       <br>
+                               GENRE: Action
+                            </p>
+                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </section></div>
+            <!-- Card: City -->
+
+
+
+
+
+
+            <!-- Card: City -->
+            <div class="animals"><section class="card-section">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card__container">
+                            <div class="card-front">
+                                <div class="card-front__tp card-front__tp--city">
+                                <h2 class="card-front__heading">
+                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
+                            </h2>
+                            <p class="card-front__text-price">
+                                Download
+                            </p>
+                                </div>
+
+                                <div class="card-front__bt">
+                                    <p class="card-front__text-view card-front__text-view--city">
+                                        <font color="white">God of War Ragnarök </font> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-page">
+                        <div class="inside-page__container">
+                            <h3 class="inside-page__heading inside-page__heading--city">
+                                RELEASE: 2022
+                            </h3>
+                            <p class="inside-page__text">
+                               ⭐⭐⭐⭐⭐
+			       <br>
+			       Game + Update: 80.00 GB
+			       <br>
+                               GENRE: Action
+                            </p>
+                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -491,7 +939,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -532,7 +980,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -541,7 +989,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -582,7 +1030,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -590,8 +1038,11 @@
 
 
 
+
+
+
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -632,7 +1083,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -641,7 +1092,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -682,7 +1133,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -691,7 +1142,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -732,7 +1183,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -741,7 +1192,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -782,7 +1233,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -791,7 +1242,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -832,7 +1283,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
 
@@ -841,7 +1292,7 @@
 
 
             <!-- Card: City -->
-            <section class="card-section">
+            <div class="animals"><section class="card-section">
                 <div class="card">
                     <div class="flip-card">
                         <div class="flip-card__container">
@@ -882,511 +1333,15 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section></div>
             <!-- Card: City -->
 
-
-
-
-
-
-            <!-- Card: City -->
-            <section class="card-section">
-                <div class="card">
-                    <div class="flip-card">
-                        <div class="flip-card__container">
-                            <div class="card-front">
-                                <div class="card-front__tp card-front__tp--city">
-                                <h2 class="card-front__heading">
-                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
-                            </h2>
-                            <p class="card-front__text-price">
-                                Download
-                            </p>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        <font color="white">God of War Ragnarök </font> 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--city">
-                                RELEASE: 2022
-                            </h3>
-                            <p class="inside-page__text">
-                               ⭐⭐⭐⭐⭐
-			       <br>
-			       Game + Update: 80.00 GB
-			       <br>
-                               GENRE: Action
-                            </p>
-                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Card: City -->
 
 
 <br>
 
 
 
-
-
-
-            <!-- Card: City -->
-            <section class="card-section">
-                <div class="card">
-                    <div class="flip-card">
-                        <div class="flip-card__container">
-                            <div class="card-front">
-                                <div class="card-front__tp card-front__tp--city">
-                                <h2 class="card-front__heading">
-                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
-                            </h2>
-                            <p class="card-front__text-price">
-                                Download
-                            </p>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        <font color="white">God of War Ragnarök </font> 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--city">
-                                RELEASE: 2022
-                            </h3>
-                            <p class="inside-page__text">
-                               ⭐⭐⭐⭐⭐
-			       <br>
-			       Game + Update: 80.00 GB
-			       <br>
-                               GENRE: Action
-                            </p>
-                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Card: City -->
-
-
-
-
-
-
-            <!-- Card: City -->
-            <section class="card-section">
-                <div class="card">
-                    <div class="flip-card">
-                        <div class="flip-card__container">
-                            <div class="card-front">
-                                <div class="card-front__tp card-front__tp--city">
-                                <h2 class="card-front__heading">
-                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
-                            </h2>
-                            <p class="card-front__text-price">
-                                Download
-                            </p>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        <font color="white">God of War Ragnarök </font> 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--city">
-                                RELEASE: 2022
-                            </h3>
-                            <p class="inside-page__text">
-                               ⭐⭐⭐⭐⭐
-			       <br>
-			       Game + Update: 80.00 GB
-			       <br>
-                               GENRE: Action
-                            </p>
-                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Card: City -->
-
-
-
-
-
-
-            <!-- Card: City -->
-            <section class="card-section">
-                <div class="card">
-                    <div class="flip-card">
-                        <div class="flip-card__container">
-                            <div class="card-front">
-                                <div class="card-front__tp card-front__tp--city">
-                                <h2 class="card-front__heading">
-                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
-                            </h2>
-                            <p class="card-front__text-price">
-                                Download
-                            </p>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        <font color="white">God of War Ragnarök </font> 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--city">
-                                RELEASE: 2022
-                            </h3>
-                            <p class="inside-page__text">
-                               ⭐⭐⭐⭐⭐
-			       <br>
-			       Game + Update: 80.00 GB
-			       <br>
-                               GENRE: Action
-                            </p>
-                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Card: City -->
-
-
-
-
-
-
-            <!-- Card: City -->
-            <section class="card-section">
-                <div class="card">
-                    <div class="flip-card">
-                        <div class="flip-card__container">
-                            <div class="card-front">
-                                <div class="card-front__tp card-front__tp--city">
-                                <h2 class="card-front__heading">
-                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
-                            </h2>
-                            <p class="card-front__text-price">
-                                Download
-                            </p>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        <font color="white">God of War Ragnarök </font> 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--city">
-                                RELEASE: 2022
-                            </h3>
-                            <p class="inside-page__text">
-                               ⭐⭐⭐⭐⭐
-			       <br>
-			       Game + Update: 80.00 GB
-			       <br>
-                               GENRE: Action
-                            </p>
-                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Card: City -->
-
-
-
-
-
-
-            <!-- Card: City -->
-            <section class="card-section">
-                <div class="card">
-                    <div class="flip-card">
-                        <div class="flip-card__container">
-                            <div class="card-front">
-                                <div class="card-front__tp card-front__tp--city">
-                                <h2 class="card-front__heading">
-                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
-                            </h2>
-                            <p class="card-front__text-price">
-                                Download
-                            </p>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        <font color="white">God of War Ragnarök </font> 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--city">
-                                RELEASE: 2022
-                            </h3>
-                            <p class="inside-page__text">
-                               ⭐⭐⭐⭐⭐
-			       <br>
-			       Game + Update: 80.00 GB
-			       <br>
-                               GENRE: Action
-                            </p>
-                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Card: City -->
-
-
-
-
-
-
-            <!-- Card: City -->
-            <section class="card-section">
-                <div class="card">
-                    <div class="flip-card">
-                        <div class="flip-card__container">
-                            <div class="card-front">
-                                <div class="card-front__tp card-front__tp--city">
-                                <h2 class="card-front__heading">
-                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
-                            </h2>
-                            <p class="card-front__text-price">
-                                Download
-                            </p>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        <font color="white">God of War Ragnarök </font> 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--city">
-                                RELEASE: 2022
-                            </h3>
-                            <p class="inside-page__text">
-                               ⭐⭐⭐⭐⭐
-			       <br>
-			       Game + Update: 80.00 GB
-			       <br>
-                               GENRE: Action
-                            </p>
-                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Card: City -->
-
-
-
-
-
-
-            <!-- Card: City -->
-            <section class="card-section">
-                <div class="card">
-                    <div class="flip-card">
-                        <div class="flip-card__container">
-                            <div class="card-front">
-                                <div class="card-front__tp card-front__tp--city">
-                                <h2 class="card-front__heading">
-                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
-                            </h2>
-                            <p class="card-front__text-price">
-                                Download
-                            </p>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        <font color="white">God of War Ragnarök </font> 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--city">
-                                RELEASE: 2022
-                            </h3>
-                            <p class="inside-page__text">
-                               ⭐⭐⭐⭐⭐
-			       <br>
-			       Game + Update: 80.00 GB
-			       <br>
-                               GENRE: Action
-                            </p>
-                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Card: City -->
-
-
-
-
-
-
-            <!-- Card: City -->
-            <section class="card-section">
-                <div class="card">
-                    <div class="flip-card">
-                        <div class="flip-card__container">
-                            <div class="card-front">
-                                <div class="card-front__tp card-front__tp--city">
-                                <h2 class="card-front__heading">
-                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
-                            </h2>
-                            <p class="card-front__text-price">
-                                Download
-                            </p>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        <font color="white">God of War Ragnarök </font> 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--city">
-                                RELEASE: 2022
-                            </h3>
-                            <p class="inside-page__text">
-                               ⭐⭐⭐⭐⭐
-			       <br>
-			       Game + Update: 80.00 GB
-			       <br>
-                               GENRE: Action
-                            </p>
-                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Card: City -->
-
-
-
-
-
-
-            <!-- Card: City -->
-            <section class="card-section">
-                <div class="card">
-                    <div class="flip-card">
-                        <div class="flip-card__container">
-                            <div class="card-front">
-                                <div class="card-front__tp card-front__tp--city">
-                                <h2 class="card-front__heading">
-                                <img src="https://i.ibb.co/nQ5M1jq/god-of-war-ragnarock.png" alt="God of War Ragnarök" style="width:150px;height:140px;">
-                            </h2>
-                            <p class="card-front__text-price">
-                                Download
-                            </p>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        <font color="white">God of War Ragnarök </font> 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <img src="https://i.ytimg.com/an_webp/ugVINmyHN_k/mqdefault_6s.webp?du=3000&sqp=CNr2xJsG&rs=AOn4CLBRN7UgZ5_ahEJlQie1I02e0Aoe0g" style="width:150px;height:140px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--city">
-                                RELEASE: 2022
-                            </h3>
-                            <p class="inside-page__text">
-                               ⭐⭐⭐⭐⭐
-			       <br>
-			       Game + Update: 80.00 GB
-			       <br>
-                               GENRE: Action
-                            </p>
-                            <a href="https://ckk.ai/GodOfWarRagnarok" target="_blank "class="inside-page__btn inside-page__btn--city">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Card: City -->
 
 
 
@@ -1395,7 +1350,7 @@
 
 
 
-        </section>
+        </section></div>
         <footer class="footer">
             <p class="footer-text">&copy; <script>document.write(new Date().getFullYear())</script> Created by Imadesigns</p>
 
