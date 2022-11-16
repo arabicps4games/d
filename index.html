@@ -27,7 +27,7 @@
 											   } 
 											 
 											   input[type=text] { 
-												  width: 6%; 
+												  width: 9%; 
 												  -webkit-transition: width 0.15s ease-in-out; 
 												  transition: width 0.15s ease-in-out; 
 												 margin: 10px; 
@@ -75,41 +75,7 @@
 
 
 
-<!-- menu collapsable right 
-<script>
-$(".open-slide").on("click",function(){
-  $(".side-nav").css("width","250px")
-  $("h1").css("margin-left","250px");
-})
 
-$(".btn-close").on("click",function(){
-  $(".side-nav").css("width","0px")
-  $("h1").css("margin-left","0px");
-})
-</script>
-
-<nav class="navbar">
-  <span class="open-slide">
-    <a href="#">
-      <svg width="30" height="30">
-        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-      </svg>
-    </a>
-  </span>
-
-</nav>
-
-<div id="side-menu" class="side-nav">
-  <a href="#" class="btn-close">&times;</a>
-  <a href="#">Test</a>
-  <a href="#">Test</a>
-  <a href="#">Test</a>
-  <a href="#">Test</a>
-</div>
-
- menu collapsable right -->
 
 
 
@@ -160,8 +126,97 @@ $(".btn-close").on("click",function(){
 
 
 
+<!-- menu collapsable top -->
+<head>
+<style>
+* { box-sizing: border-box; }
 
 
+
+.menu {
+	background-color: black;
+	color: white;
+	height: 3.5rem;
+	overflow: hidden;
+	padding: 0.5rem;
+        font-size: 20px;	
+	transition: height 1s ease-out;
+}
+
+.menu.active {
+	height: 50vh;
+	color: white;
+}
+
+.btn-menu {
+	color: white;
+	height: 2.5rem;
+	width: 4rem;
+	display: block;
+	text-decoration: none;
+	color: white;	
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjEycHgiIGhlaWdodD0iNnB4IiB2aWV3Qm94PSIwIDAgMTIgNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDMuNC40ICgxNzI0OSkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+YnVyZ2VyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9Imljb24iIHNrZXRjaDp0eXBlPSJNU0FydGJvYXJkR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMy4wMDAwMDAsIC0yOC4wMDAwMDApIiBmaWxsPSIjRkZGRkZGIj4KICAgICAgICAgICAgPHBhdGggZD0iTTIzLDMzLjUgTDIzLDMyLjUgQzIzLDMyLjM2NDU4MjcgMjMuMDQ5NDc4NywzMi4yNDczOTYzIDIzLjE0ODQzNzUsMzIuMTQ4NDM3NSBDMjMuMjQ3Mzk2MywzMi4wNDk0Nzg3IDIzLjM2NDU4MjcsMzIgMjMuNSwzMiBMMzQuNSwzMiBDMzQuNjM1NDE3MywzMiAzNC43NTI2MDM3LDMyLjA0OTQ3ODcgMzQuODUxNTYyNSwzMi4xNDg0Mzc1IEMzNC45NTA1MjEzLDMyLjI0NzM5NjMgMzUsMzIuMzY0NTgyNyAzNSwzMi41IEwzNSwzMy41IEMzNSwzMy42MzU0MTczIDM0Ljk1MDUyMTMsMzMuNzUyNjAzNyAzNC44NTE1NjI1LDMzLjg1MTU2MjUgQzM0Ljc1MjYwMzcsMzMuOTUwNTIxMyAzNC42MzU0MTczLDM0IDM0LjUsMzQgTDIzLjUsMzQgQzIzLjM2NDU4MjcsMzQgMjMuMjQ3Mzk2MywzMy45NTA1MjEzIDIzLjE0ODQzNzUsMzMuODUxNTYyNSBDMjMuMDQ5NDc4NywzMy43NTI2MDM3IDIzLDMzLjYzNTQxNzMgMjMsMzMuNSBMMjMsMzMuNSBaIE0yMywyOS41IEwyMywyOC41IEMyMywyOC4zNjQ1ODI3IDIzLjA0OTQ3ODcsMjguMjQ3Mzk2MyAyMy4xNDg0Mzc1LDI4LjE0ODQzNzUgQzIzLjI0NzM5NjMsMjguMDQ5NDc4NyAyMy4zNjQ1ODI3LDI4IDIzLjUsMjggTDM0LjUsMjggQzM0LjYzNTQxNzMsMjggMzQuNzUyNjAzNywyOC4wNDk0Nzg3IDM0Ljg1MTU2MjUsMjguMTQ4NDM3NSBDMzQuOTUwNTIxMywyOC4yNDczOTYzIDM1LDI4LjM2NDU4MjcgMzUsMjguNSBMMzUsMjkuNSBDMzUsMjkuNjM1NDE3MyAzNC45NTA1MjEzLDI5Ljc1MjYwMzcgMzQuODUxNTYyNSwyOS44NTE1NjI1IEMzNC43NTI2MDM3LDI5Ljk1MDUyMTMgMzQuNjM1NDE3MywzMCAzNC41LDMwIEwyMy41LDMwIEMyMy4zNjQ1ODI3LDMwIDIzLjI0NzM5NjMsMjkuOTUwNTIxMyAyMy4xNDg0Mzc1LDI5Ljg1MTU2MjUgQzIzLjA0OTQ3ODcsMjkuNzUyNjAzNyAyMywyOS42MzU0MTczIDIzLDI5LjUgTDIzLDI5LjUgWiIgaWQ9ImJ1cmdlciIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+) no-repeat center;
+	background-size: 2rem;
+}
+
+.btn-menu.active {
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjExcHgiIGhlaWdodD0iMTFweCIgdmlld0JveD0iMCAwIDExIDExIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy40LjQgKDE3MjQ5KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5jbG9zZTwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHNrZXRjaDp0eXBlPSJNU1BhZ2UiPgogICAgICAgIDxnIGlkPSJpY29uIiBza2V0Y2g6dHlwZT0iTVNBcnRib2FyZEdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjQuMDAwMDAwLCAtMjYuMDAwMDAwKSIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yNC44NTkzNzUsMzQuMzI4MTI1IEMyNC44NTkzNzUsMzQuMTE5NzkwNiAyNC45MzIyOTA5LDMzLjk0MjcwOTEgMjUuMDc4MTI1LDMzLjc5Njg3NSBMMjcuMzc1LDMxLjUgTDI1LjA3ODEyNSwyOS4yMDMxMjUgQzI0LjkzMjI5MDksMjkuMDU3MjkwOSAyNC44NTkzNzUsMjguODgwMjA5NCAyNC44NTkzNzUsMjguNjcxODc1IEMyNC44NTkzNzUsMjguNDYzNTQwNiAyNC45MzIyOTA5LDI4LjI4NjQ1OTEgMjUuMDc4MTI1LDI4LjE0MDYyNSBMMjYuMTQwNjI1LDI3LjA3ODEyNSBDMjYuMjg2NDU5MSwyNi45MzIyOTA5IDI2LjQ2MzU0MDYsMjYuODU5Mzc1IDI2LjY3MTg3NSwyNi44NTkzNzUgQzI2Ljg4MDIwOTQsMjYuODU5Mzc1IDI3LjA1NzI5MDksMjYuOTMyMjkwOSAyNy4yMDMxMjUsMjcuMDc4MTI1IEwyOS41LDI5LjM3NSBMMzEuNzk2ODc1LDI3LjA3ODEyNSBDMzEuOTQyNzA5MSwyNi45MzIyOTA5IDMyLjExOTc5MDYsMjYuODU5Mzc1IDMyLjMyODEyNSwyNi44NTkzNzUgQzMyLjUzNjQ1OTQsMjYuODU5Mzc1IDMyLjcxMzU0MDksMjYuOTMyMjkwOSAzMi44NTkzNzUsMjcuMDc4MTI1IEwzMy45MjE4NzUsMjguMTQwNjI1IEMzNC4wNjc3MDkxLDI4LjI4NjQ1OTEgMzQuMTQwNjI1LDI4LjQ2MzU0MDYgMzQuMTQwNjI1LDI4LjY3MTg3NSBDMzQuMTQwNjI1LDI4Ljg4MDIwOTQgMzQuMDY3NzA5MSwyOS4wNTcyOTA5IDMzLjkyMTg3NSwyOS4yMDMxMjUgTDMxLjYyNSwzMS41IEwzMy45MjE4NzUsMzMuNzk2ODc1IEMzNC4wNjc3MDkxLDMzLjk0MjcwOTEgMzQuMTQwNjI1LDM0LjExOTc5MDYgMzQuMTQwNjI1LDM0LjMyODEyNSBDMzQuMTQwNjI1LDM0LjUzNjQ1OTQgMzQuMDY3NzA5MSwzNC43MTM1NDA5IDMzLjkyMTg3NSwzNC44NTkzNzUgTDMyLjg1OTM3NSwzNS45MjE4NzUgQzMyLjcxMzU0MDksMzYuMDY3NzA5MSAzMi41MzY0NTk0LDM2LjE0MDYyNSAzMi4zMjgxMjUsMzYuMTQwNjI1IEMzMi4xMTk3OTA2LDM2LjE0MDYyNSAzMS45NDI3MDkxLDM2LjA2NzcwOTEgMzEuNzk2ODc1LDM1LjkyMTg3NSBMMjkuNSwzMy42MjUgTDI3LjIwMzEyNSwzNS45MjE4NzUgQzI3LjA1NzI5MDksMzYuMDY3NzA5MSAyNi44ODAyMDk0LDM2LjE0MDYyNSAyNi42NzE4NzUsMzYuMTQwNjI1IEMyNi40NjM1NDA2LDM2LjE0MDYyNSAyNi4yODY0NTkxLDM2LjA2NzcwOTEgMjYuMTQwNjI1LDM1LjkyMTg3NSBMMjUuMDc4MTI1LDM0Ljg1OTM3NSBDMjQuOTMyMjkwOSwzNC43MTM1NDA5IDI0Ljg1OTM3NSwzNC41MzY0NTk0IDI0Ljg1OTM3NSwzNC4zMjgxMjUgTDI0Ljg1OTM3NSwzNC4zMjgxMjUgWiIgaWQ9ImNsb3NlIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=) no-repeat center;
+		background-size: 2rem;
+}
+
+.btn-menu svg {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.btn-menu span {
+  font-size: 22px;
+  position: relative;
+  top: 4px;
+  color: white;
+}
+
+nav {
+	ul li a {
+		color: white;
+		text-decoration: none;
+
+	}
+}
+</style>
+</head>
+
+<div class="menu" id="menu">
+	<a href="#" class="btn-menu" id="btn-menu"></a>
+	<nav>
+		<ul>
+			<li><a href="#"><font color="white">Home</font></a></li>
+			<li><a href="#"><font color="white">Test</font></a></li>
+			<li><a href="#"><font color="white">Test</font></a></li>
+		</ul>
+	</nav>
+	<p>Test</p>
+	
+</div>
+<script>
+var menu = document.getElementById('menu'),
+		btnMenu = document.getElementById('btn-menu');
+
+btnMenu.addEventListener('click', function(event) {
+	event.preventDefault();
+	if (menu.classList.contains('active')) {
+		menu.classList.remove('active');
+		btnMenu.classList.remove('active');
+	}
+	else {
+		menu.classList.add('active');
+		btnMenu.classList.add('active');
+	}	
+}, false);
+</script>
+<!-- menu collapsable top -->
 
 
 
@@ -237,14 +292,14 @@ $(".btn-close").on("click",function(){
 </style>
 </head>
 <ul class="side-menu">
-<li><a href="https://arabicps4games.com"><font size="5" color="white"> ☰ &nbsp;&nbsp;&nbsp;</font>Menu</a></li>
-<li><a href="https://arabicps4games.com"><font size="5" color="white"> ↩ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
-<li><a href="https://arabicps4games.com"><font size="5" color="white"> ▶ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
-<li><a href="https://arabicps4games.com"><font size="5" color="white"> ★ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
-<li><a href="https://arabicps4games.com"><font size="5" color="white"> ✆ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
-<li><a href="https://arabicps4games.com"><font size="5" color="white"> ⟲ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
-<li><a href="https://arabicps4games.com"><font size="5" color="white"> ＄ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
-<li><a href="https://arabicps4games.com"><font size="5" color="white"> ＠ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
+<li><a href="https://arabicps4games.com" target="_blank"><font size="5" color="white"> ☰ &nbsp;&nbsp;&nbsp;</font>Menu</a></li>
+<li><a href="https://arabicps4games.com" target="_blank"><font size="5" color="white"> ↩ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
+<li><a href="https://arabicps4games.com" target="_blank"><font size="5" color="white"> ▶ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
+<li><a href="https://arabicps4games.com" target="_blank"><font size="5" color="white"> ★ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
+<li><a href="https://arabicps4games.com" target="_blank"><font size="5" color="white"> ✆ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
+<li><a href="https://arabicps4games.com" target="_blank"><font size="5" color="white"> ⟲ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
+<li><a href="https://arabicps4games.com" target="_blank"><font size="5" color="white"> ＄ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
+<li><a href="https://arabicps4games.com" target="_blank"><font size="5" color="white"> ＠ &nbsp;&nbsp;&nbsp;</font>Test</a></li>
 </ul>
 <!-- menu collapsable right -->
 
