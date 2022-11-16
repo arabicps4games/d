@@ -384,3 +384,104 @@ body {
   font-size: 1.2rem;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* menu collapsable right 
+
+
+.navbar{
+  overflow: hidden;
+  height: 63px;
+}
+
+.navbar a {
+  background-color: black;
+  float: right;
+  posision: fixed;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar ul {
+  margin: 8px 0 0 0;
+  list-style: none;
+}
+
+.navbar a:hover{
+  color: black;
+  background-color: black;
+}
+
+.side-nav{
+  float: right;
+  height: 100%;
+  width: auto;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden; 
+  transition: 0.5s;
+}
+
+#main h1 {
+  transition: 0.5s;
+}
+
+.side-nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #aaa;
+}
+
+.side-nav a:hover{
+  color:#fff;
+  font-size: 20px;
+}
+
+.btn-close{
+  font-size: 34px;
+  color: #ddd;
+  position: auto;
+  top: 0;
+  right: 22px;
+  text-decoration: none;
+  background-color:        rgba(255,255,255,0.3);
+}
+
+ menu collapsable right */
+
+
+
+
+
+
+
+
+
+
