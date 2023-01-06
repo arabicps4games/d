@@ -86,11 +86,11 @@ body {
   background-color: transparent;
   border: 3px solid;
   border-radius: .5rem;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: .3rem;
   overflow: hidden;
-  padding: .7rem .75rem;
+  padding: .1rem;
   position: relative;
   text-decoration: none;
   transition: all .3s ease;
@@ -274,8 +274,8 @@ body {
 .card-front__tp--city {
   background: linear-gradient(
     to bottom,
-    #ff73b9,
-    #ff40a1
+    #000000,
+    #000000
   );
 }
 
